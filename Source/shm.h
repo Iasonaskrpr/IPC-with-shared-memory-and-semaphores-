@@ -12,7 +12,7 @@
 In general set to 1 if processes start from C1 and 0 if they start from C0*/
 #define ADJUST 1 
 #define CHILD_NAME "./child" 
-#define FILE_NAME "config_10_10000.txt" //Change for different configuration files
+#define FILE_NAME "Data/config_10_10000.txt" //Change for different configuration files
 #define SHARED_MEMORY_NAME "Shm_Buf" 
 #define errExit(msg)    do { perror(msg); exit(EXIT_FAILURE); \
                         } while (0)

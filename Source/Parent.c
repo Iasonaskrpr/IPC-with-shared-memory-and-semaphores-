@@ -61,12 +61,12 @@ char** ReadConfig(FILE* config){
 int main(){
     int fd = shm_open(SHARED_MEMORY_NAME,O_CREAT|O_RDWR,0600);
     //We open all the files we need
-    FILE* book = fopen("mobydick.txt","r");
+    FILE* book = fopen("Data/mobydick.txt","r");
     FILE* config = fopen(FILE_NAME,"r");
-    FILE* sent = fopen("sentlinespar.txt","w");
+    FILE* sent = fopen("Data/sentlinespar.txt","w");
     /* We open the file here because we want to have an empty file for the children, If we did this in the child program every time
     a child would open the file the contents would be overwriten*/
-    FILE* rec = fopen("sentlineschild.txt","w"); 
+    FILE* rec = fopen("Data/sentlineschild.txt","w"); 
     //Intializing variables we will need later in the program
     Shared_Memory *shmp;
     char** Conf;//Used to store the commands from each line from the configuration file

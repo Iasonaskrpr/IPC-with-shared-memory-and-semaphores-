@@ -6,10 +6,10 @@ TARGETS := parent child
 
 all: $(TARGETS)
 
-parent: Parent.c
+parent: Source/Parent.c
 	$(CC) $(CFLAGS) -o $@ $<
 
-child: Child.c
+child: Source/Child.c
 	$(CC) $(CFLAGS) -o $@ $<
 
 run: all
