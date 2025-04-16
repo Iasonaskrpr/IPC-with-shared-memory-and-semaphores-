@@ -1,4 +1,4 @@
-#IPC-with-shared-memory-and-semaphores
+## IPC-with-shared-memory-and-semaphores
 
 This project is a multi-process interprocess communication (IPC) system built using **POSIX shared memory** and **semaphores**. It enables the parent process to coordinate and exchange data with dynamically spawned child processes based on configuration instructions.
 
